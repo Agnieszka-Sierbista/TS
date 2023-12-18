@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agnieszka Sierbista</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .code-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        pre[class*="language-"] code {
+            font-size: 24px;
+        }
+
+        .pagination {
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: rgba(51, 51, 51, 0.82);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        img {
+            max-width: 1000px;
+            max-height: 80vh;
+            object-fit: fill;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+
+</head>
+<body>
+<div class="code-container language-javascript">
+</div>
+<div class="pagination">
+    <button id="prevBtn" onclick="prevPage()">Previous</button>
+    <span id="pageInfo"></span>
+    <button id="nextBtn" onclick="nextPage()">Next</button>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
